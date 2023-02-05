@@ -1,0 +1,47 @@
+{% extends './base.html' %} {% block title%} Productos {% endblock %} {% block body %}
+
+<div class="container">
+    <div class="card text-bg-primary mb-3 text-center" style="max-width: 70rem;">
+        <div class="card-header">DESCRIPCIÓN DE NUSTROS PRODUCTOS</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1></h1>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Nombre</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for leng in productos %}
+                                <tr>
+
+
+                                    <td>{{loop.index}}</td>
+                                    <td>{{leng}}</td>
+
+
+
+
+                                </tr>
+                                {% endfor %}
+                                <!-- {% for leng in lenguajese %}
+                                <td>{{leng}}</td>
+                                {% endfor %} -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="{{url_for('static', filename='img/fondo1.jpg')}}" class="card-img-top">
+    </div>
+</div>
+
+
+{% endblock %}

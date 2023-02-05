@@ -1,0 +1,186 @@
+{% extends './base.html' %} {% block title%} Menu {% endblock %} {% block body %}
+
+<link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+
+
+
+<main>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center" style="color: rgb(0, 0, 0)">
+        <h4 class="my-0 font-weight-bold">DATE EL GUSTO DE PROBAR EL DELICIOSO SAZON EN PARRILLA DEL SUR</h4>
+        <h1 class="my-0 font-weight-bold">NUESTROS PRODUCTOS</h1>
+
+    </div>
+
+    <div class="container" id="lista-productos">
+        <!-- whiskys-->
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm" category="whiskys">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">POLLO BROASTER</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/1.jpeg')}}" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">$ <span class="">20.000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li></li>
+                        <li>Porcione de pollo +</li>
+                        <li>Porcion de papas +</li>
+                        <li>Gaseosa personal</li>
+
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                </div>
+            </div>
+
+
+            <div class="card mb-4 shadow-sm" category="whiskys">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">HAMBURGUESA</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/2.jpeg')}}" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">$ <span class="">15.000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li></li>
+                        <li>Hamburguesa clasica +</li>
+                        <li>Jugo personal</li>
+
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm" category="whiskys">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">PAPAS MIXTAS</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/3.jpeg')}}" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">$ <span class="">10.000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li></li>
+                        <li>Porcion de papas +</li>
+                        <li>Salchicha ranchera +</li>
+                        <li>Gaseosa personal</li>
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- tequilas-->
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">PERRO CALIENTE</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/4.jpeg')}}" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">$ <span class="">12.000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li></li>
+                        <li>Perro Caliente con papa a la francesa</li>
+
+                    </ul>
+                    <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">PIZZA</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/5.jpeg')}}" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">$ <span class="">9.000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li></li>
+                        <li>Pizza Hawaiana </li>
+
+                    </ul>
+                    <!-- <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a> -->
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">SANDWICH CUBANO</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/6.jpeg')}}" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">$ <span class="">145.000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li></li>
+                        <li>1 litro</li>
+                        <li>disponible</li>
+                        <li>10</li>
+                    </ul>
+                    <!-- <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a> -->
+                </div>
+            </div>
+        </div>
+        <!-- rones-->
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">CARNE</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/7.jpeg')}}" class="card-img-top">
+                    <h1 class="card-title pricing-card-title precio">$ <span class="">65000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li></li>
+                        <li>1 litro</li>
+                        <li>disponible</li>
+                        <li>10</li>
+                    </ul>
+                    <!-- <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a> -->
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-bold">FILETE DE POLLO</h4>
+                </div>
+                <div class="card-body">
+                    <img src="{{url_for('static', filename='img/8.jpeg' )}} " class="card-img-top ">
+                    <h1 class="card-title pricing-card-title precio ">$ <span class=" ">45000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4 ">
+                        <li></li>
+                        <li>1 litro</li>
+                        <li>disponible</li>
+                        <li>10</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="card mb-4 shadow-sm ">
+                <div class="card-header ">
+                    <h4 class="my-0 font-weight-bold ">PAPAS RELLENAS</h4>
+                </div>
+                <div class="card-body ">
+                    <img src="{{url_for( 'static', filename='img/9.jpeg' )}} " class="card-img-top ">
+                    <h1 class="card-title pricing-card-title precio ">$ <span class=" ">85000</span></h1>
+
+                    <ul class="list-unstyled mt-3 mb-4 ">
+                        <li></li>
+                        <li>1 litro</li>
+                        <li>disponible</li>
+                        <li>10</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+{% endblock %}
